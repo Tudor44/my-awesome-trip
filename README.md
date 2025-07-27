@@ -1,6 +1,6 @@
-# 🇭🇷 🇸🇮 🇮🇹 Il Mio Viaggio Estate 2025
+# My Awesome Trip
 
-A modern, interactive travel planner for a Summer 2025 trip through Croatia, Slovenia, and Italy.
+A modern, interactive travel planner (updated to Summer 2025 through Croatia, Slovenia, and Italy).
 
 ## 🌟 Features
 
@@ -30,7 +30,7 @@ Visit the live app: [https://yourusername.github.io/app_di_viaggio/](https://you
 3. **Phrases Tab**: Learn essential phrases for each country
 4. **Info Tab**: Stay updated with 2025 travel requirements
 
-## 🧳 Trip Overview
+## 🧳 2025 Trip Overview
 
 **Cities**: Zagreb → Ljubljana → Trieste → Istria  
 **Dates**: August 28 - September 4, 2025  
@@ -68,24 +68,6 @@ python3 -m http.server 8000
 open http://localhost:8000/index_new.html
 ```
 
-## 📁 Project Structure
-
-```
-app_di_viaggio/
-├── index_new.html          # Main application
-├── assets/
-│   ├── css/               # Modular stylesheets
-│   │   ├── main.css       # Base styles & variables
-│   │   ├── components.css # UI components
-│   │   └── responsive.css # Media queries
-│   └── js/                # JavaScript modules
-│       ├── app.js         # Main application
-│       ├── modules/       # Feature modules
-│       └── data/          # Data structures
-├── docker-compose.yml     # Container orchestration
-└── Makefile              # Development commands
-```
-
 ## 🎯 Roadmap
 
 - [ ] Budget tracking with expense management
@@ -107,4 +89,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Buon Viaggio!** 🌍✈️
+**Buon Viaggio!🇮🇹** 🌍✈️
