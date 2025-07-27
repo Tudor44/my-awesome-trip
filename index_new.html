@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mio Viaggio Estate 2025</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🇭🇷 🇸🇮 🇮🇹 Il Mio Viaggio Estate 2025</h1>
+            <p>Zagabria • Lubiana • Trieste • Istria | 28 Agosto - 4 Settembre</p>
+        </div>
+
+        <div class="nav-tabs">
+            <button class="nav-tab active" data-tab="itinerary">📋 Itinerario</button>
+            <button class="nav-tab" data-tab="photos">📸 Galleria Foto</button>
+            <button class="nav-tab" data-tab="phrases">🗣️ Frasi Utili</button>
+            <button class="nav-tab" data-tab="info">ℹ️ Info 2025</button>
+        </div>
+
+        <div id="progress-section">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressBar" style="width: 0%"></div>
+            </div>
+            <div class="progress-text" id="progressText">0% completato - Il viaggio inizia tra poco!</div>
+        </div>
+
+        <!-- ITINERARIO TAB -->
+        <div id="itinerary" class="tab-content active">
+            <div class="city-section zagreb">
+                <h2 class="city-title">🏰 Zagabria, Croazia</h2>
+                <p><strong>28-30 Agosto</strong> • Il cuore vibrante della Croazia</p>
+
+                <ul class="activity-list">
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="zagreb_1"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Passeggiata serale a Via Tkalčića</div>
+                            <div class="activity-description">Prima serata: immersione nella vita notturna zagabrese tra
+                                pub e ristoranti</div>
+                            <div class="activity-time">28 Agosto - Sera</div>
+                        </div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="zagreb_2"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Mercato di Dolac</div>
+                            <div class="activity-description">Visita mattutina al "ventre di Zagabria" con i suoi
+                                iconici ombrelloni rossi</div>
+                            <div class="activity-time">29 Agosto - Mattina</div>
+                        </div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="zagreb_3"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Cattedrale di Zagabria (esterno)</div>
+                            <div class="activity-description">⚠️ Interno chiuso per restauri post-terremoto. Vista
+                                esterna delle guglie gotiche</div>
+                            <div class="activity-time">29 Agosto - Mattina</div>
+                        </div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="zagreb_4"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Funicolare storica</div>
+                            <div class="activity-description">Salita alla Città Alta con la funicolare del 1890 (66
+                                metri, 64 secondi)</div>
+                            <div class="activity-time">29 Agosto - Pomeriggio</div>
+                        </div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="zagreb_5"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Chiesa di San Marco</div>
+                            <div class="activity-description">Il famoso tetto con stemmi colorati di Croazia, Dalmazia e
+                                Slavonia</div>
+                            <div class="activity-time">29 Agosto - Pomeriggio</div>
+                        </div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="zagreb_6"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Museo delle Relazioni Interrotte</div>
+                            <div class="activity-description">Esperienza emotivamente coinvolgente con oggetti e storie
+                                di relazioni finite</div>
+                            <div class="activity-time">29 Agosto - Pomeriggio</div>
+                        </div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="zagreb_7"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Strossmayer Promenade</div>
+                            <div class="activity-description">Vista panoramica sui tetti rossi della Città Bassa</div>
+                            <div class="activity-time">29 Agosto - Pomeriggio</div>
+                        </div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="zagreb_8"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Scelta finale: Arte, Natura o Storia</div>
+                            <div class="activity-description">Museo d'Arte Naïf, Giardino Botanico o Tunnel Grič</div>
+                            <div class="activity-time">30 Agosto - Mattina</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="city-section ljubljana">
+                <h2 class="city-title ljubljana">🐉 Lubiana, Slovenia</h2>
+                <p><strong>30 Agosto - 1 Settembre</strong> • La capitale verde dei draghi</p>
+
+                <ul class="activity-list">
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="ljubljana_1"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Piazza Prešeren e Triplo Ponte</div>
+                            <div class="activity-description">Il capolavoro di Plečnik: da un ponte ottocentesco a tre
+                                corsie pedonali</div>
+                            <div class="activity-time">30 Agosto - Sera</div>
+                        </div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="ljubljana_2"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Mercato Centrale di Plečnik</div>
+                            <div class="activity-description">Colonnato rinascimentale e mercato coperto lungo il fiume
+                            </div>
+                            <div class="activity-time">31 Agosto - Mattina</div>
+                        </div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="ljubljana_3"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Ponte dei Draghi</div>
+                            <div class="activity-description">Quattro draghi in bronzo guardiani della città, simbolo di
+                                Lubiana</div>
+                            <div class="activity-time">31 Agosto - Mattina</div>
+                        </div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="ljubljana_4"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Cattedrale di San Nicola</div>
+                            <div class="activity-description">Arte barocca slovena con porte in bronzo del 1996</div>
+                            <div class="activity-time">31 Agosto - Mattina</div>
+                        </div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="ljubljana_5"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Castello di Lubiana</div>
+                            <div class="activity-description">Salita in funicolare e vista panoramica a 360° dalla Torre
+                                di Avvistamento</div>
+                            <div class="activity-time">31 Agosto - Pomeriggio</div>
+                        </div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="ljubljana_6"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Metelkova Mesto</div>
+                            <div class="activity-description">Centro culturale alternativo in ex-caserme
+                                austro-ungariche</div>
+                            <div class="activity-time">31 Agosto - Sera</div>
+                        </div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="ljubljana_7"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Biblioteca Nazionale (NUK) o Parco Tivoli</div>
+                            <div class="activity-description">Capolavoro di Plečnik o passeggiata nel polmone verde
+                                della città</div>
+                            <div class="activity-time">1 Settembre - Mattina</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="city-section trieste">
+                <h2 class="city-title trieste">⚓ Trieste, Italia</h2>
+                <p><strong>1-4 Settembre</strong> • Crogiolo di culture sul golfo</p>
+
+                <ul class="activity-list">
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="trieste_1"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Canal Grande e Borgo Teresiano</div>
+                            <div class="activity-description">Architettura neoclassica voluta da Maria Teresa d'Austria
+                            </div>
+                            <div class="activity-time">1 Settembre - Sera</div>
+                        </div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="trieste_2"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Piazza Unità d'Italia</div>
+                            <div class="activity-description">La più grande piazza d'Europa che si affaccia direttamente
+                                sul mare</div>
+                            <div class="activity-time">1 Settembre - Sera</div>
+                        </div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="trieste_3"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Colle di San Giusto</div>
+                            <div class="activity-description">Cattedrale con mosaici bizantini e Castello con vista
+                                panoramica</div>
+                            <div class="activity-time">2 Settembre - Mattina</div>
+                        </div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="trieste_4"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Castello di Miramare</div>
+                            <div class="activity-description">Residenza dell'Arciduca Massimiliano d'Asburgo a picco sul
+                                mare</div>
+                            <div class="activity-time">2 Settembre - Pomeriggio</div>
+                        </div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="trieste_5"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Passeggiata letteraria o Museo Revoltella</div>
+                            <div class="activity-description">Statue di Joyce, Svevo e Saba o arte moderna e
+                                contemporanea</div>
+                            <div class="activity-time">4 Settembre - Mattina</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="city-section istria">
+                <h2 class="city-title istria">🏖️ Escursione in Istria</h2>
+                <p><strong>3 Settembre</strong> • Penisola dalle influenze venete, slovene e croate</p>
+
+                <div class="alert">
+                    <div class="alert-title">⚠️ Importante per l'auto a noleggio</div>
+                    <div>• Vignetta slovena obbligatoria: €16 per 7 giorni<br>
+                        • Documenti: patente, carta circolazione, assicurazione<br>
+                        • Informare il noleggio dell'attraversamento confini</div>
+                </div>
+
+                <ul class="activity-list">
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="istria_1"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Noleggio auto e partenza</div>
+                            <div class="activity-description">Ritiro auto e acquisto vignetta slovena online</div>
+                            <div class="activity-time">8:30 - Partenza</div>
+                        </div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="istria_2"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Pirano, Slovenia</div>
+                            <div class="activity-description">Centro storico veneziano e Piazza Tartini (40 km, 45 min)
+                            </div>
+                            <div class="activity-time">9:15 - Mattina</div>
+                        </div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="istria_3"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Rovigno, Croazia</div>
+                            <div class="activity-description">La perla dell'Istria: centro storico arroccato e Chiesa di
+                                S. Eufemia</div>
+                            <div class="activity-time">10:30 - Pranzo</div>
+                        </div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="istria_4"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Pola, Croazia</div>
+                            <div class="activity-description">Anfiteatro Romano (tra i 6 più grandi al mondo) e Arco dei
+                                Sergi</div>
+                            <div class="activity-time">15:00 - Pomeriggio</div>
+                        </div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-checkbox" data-activity-id="istria_5"></div>
+                        <div class="activity-content">
+                            <div class="activity-title">Rientro a Trieste</div>
+                            <div class="activity-description">120 km, circa 1h45min di viaggio</div>
+                            <div class="activity-time">17:00 - Sera</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- GALLERIA FOTO TAB -->
+        <div id="photos" class="tab-content">
+            <h2>📸 Galleria di Ispirazione Fotografica</h2>
+            <p>I migliori spot Instagram-worthy del tuo viaggio con consigli per timing e composizione</p>
+
+            <div class="photo-gallery">
+                <div class="photo-card">
+                    <div class="photo-placeholder zagreb">🏰</div>
+                    <div class="photo-info">
+                        <div class="photo-title">Chiesa di San Marco - Zagabria</div>
+                        <div class="photo-description">Il tetto più instagrammabile d'Europa con gli stemmi colorati
+                            della Croazia</div>
+                        <div class="photo-tips">💡 Migliore illuminazione: mattina 7-9 AM o golden hour 17-19</div>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <div class="photo-placeholder zagreb">🎨</div>
+                    <div class="photo-info">
+                        <div class="photo-title">Gradec Whale Mural - Zagabria</div>
+                        <div class="photo-description">Street art di Etienne, tra i top 10 murales mondiali</div>
+                        <div class="photo-tips">💡 Posizione: Via Opatička. Meglio con luce diffusa per evitare riflessi
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <div class="photo-placeholder ljubljana">🐉</div>
+                    <div class="photo-info">
+                        <div class="photo-title">Ponte dei Draghi - Lubiana</div>
+                        <div class="photo-description">Quattro draghi in bronzo, simbolo della città</div>
+                        <div class="photo-tips">💡 Inquadratura dal lato fiume per includere il castello sullo sfondo
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <div class="photo-placeholder ljubljana">🌉</div>
+                    <div class="photo-info">
+                        <div class="photo-title">Triplo Ponte - Lubiana</div>
+                        <div class="photo-description">Capolavoro di Plečnik: serve obiettivo grandangolare per tutti e
+                            tre i ponti</div>
+                        <div class="photo-tips">💡 Blue hour perfetta per luci riflesse nel fiume Ljubljanica</div>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <div class="photo-placeholder ljubljana">🏰</div>
+                    <div class="photo-info">
+                        <div class="photo-title">Nebotičnik Skyscraper - Lubiana</div>
+                        <div class="photo-description">Terrazza panoramica a 360° sulla città, staff friendly per
+                            fotografi</div>
+                        <div class="photo-tips">💡 Sunrise, sunset e blue hour tutti spettacolari. Treppiede benvenuto!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <div class="photo-placeholder trieste">⚓</div>
+                    <div class="photo-info">
+                        <div class="photo-title">Piazza Unità d'Italia - Trieste</div>
+                        <div class="photo-description">La più grande piazza d'Europa sul mare</div>
+                        <div class="photo-tips">💡 Fotografa dal Molo Audace (200m) per la prospettiva completa</div>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <div class="photo-placeholder trieste">🏰</div>
+                    <div class="photo-info">
+                        <div class="photo-title">Castello di Miramare - Trieste</div>
+                        <div class="photo-description">Castello fiabesco su scogliere adriatiche</div>
+                        <div class="photo-tips">💡 Multiple viewpoints disponibili. Sunset dal parco botanico è magico
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <div class="photo-placeholder istria">🌅</div>
+                    <div class="photo-info">
+                        <div class="photo-title">Rovigno all'alba - Istria</div>
+                        <div class="photo-description">Case colorate veneziane riflesse nel porto</div>
+                        <div class="photo-tips">💡 Alba dal porto per riflessi dorati o blue hour per illuminazione
+                            urbana</div>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <div class="photo-placeholder istria">🏛️</div>
+                    <div class="photo-info">
+                        <div class="photo-title">Anfiteatro di Pola - Istria</div>
+                        <div class="photo-description">Uno dei 6 anfiteatri romani più grandi al mondo</div>
+                        <div class="photo-tips">💡 Dettagli architettonici al mattino, silhouette drammatiche al
+                            tramonto</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FRASI UTILI TAB -->
+        <div id="phrases" class="tab-content">
+            <h2>🗣️ Traduttore - Frasi Essenziali</h2>
+            <p>Le frasi più utili in croato, sloveno e inglese per il tuo viaggio</p>
+
+            <div class="phrase-categories">
+                <div class="phrase-category">
+                    <h3>🏨 Hotel & Alloggio</h3>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Ho una prenotazione</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Imam rezervaciju</div>
+                            <div class="phrase-lang phrase-slovenian">Imam rezervacijo</div>
+                            <div class="phrase-lang phrase-english">I have a reservation</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Avete camere disponibili?</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Imate li slobodne sobe?</div>
+                            <div class="phrase-lang phrase-slovenian">Imate proste sobe?</div>
+                            <div class="phrase-lang phrase-english">Do you have available rooms?</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">A che ora è il check-out?</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Kad je odjava?</div>
+                            <div class="phrase-lang phrase-slovenian">Kdaj je odjava?</div>
+                            <div class="phrase-lang phrase-english">What time is check-out?</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phrase-category">
+                    <h3>🍽️ Ristorante & Cibo</h3>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Un tavolo per due, per favore</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Stol za dvoje, molim</div>
+                            <div class="phrase-lang phrase-slovenian">Mizo za dva, prosim</div>
+                            <div class="phrase-lang phrase-english">A table for two, please</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Sono vegetariano/a</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Vegetarijanac/ka sam</div>
+                            <div class="phrase-lang phrase-slovenian">Sem vegetarijanec/ka</div>
+                            <div class="phrase-lang phrase-english">I'm vegetarian</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Il conto, per favore</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Račun, molim</div>
+                            <div class="phrase-lang phrase-slovenian">Račun, prosim</div>
+                            <div class="phrase-lang phrase-english">The bill, please</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">È delizioso!</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Jako je ukusno!</div>
+                            <div class="phrase-lang phrase-slovenian">Zelo okusno!</div>
+                            <div class="phrase-lang phrase-english">It's delicious!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phrase-category">
+                    <h3>🚌 Trasporti</h3>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Dove si trova la stazione?</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Gdje je kolodvor?</div>
+                            <div class="phrase-lang phrase-slovenian">Kje je postaja?</div>
+                            <div class="phrase-lang phrase-english">Where is the station?</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Un biglietto per...</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Jednu kartu za...</div>
+                            <div class="phrase-lang phrase-slovenian">Eno vozovnico za...</div>
+                            <div class="phrase-lang phrase-english">One ticket to...</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Quando parte il prossimo autobus?</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Kad polazi sljedeći autobus?</div>
+                            <div class="phrase-lang phrase-slovenian">Kdaj vozi naslednji avtobus?</div>
+                            <div class="phrase-lang phrase-english">When does the next bus leave?</div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="phrase-category">
+                    <h3>🆘 Emergenze</h3>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Aiuto!</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Upomoć!</div>
+                            <div class="phrase-lang phrase-slovenian">Na pomoč!</div>
+                            <div class="phrase-lang phrase-english">Help!</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Chiamate un dottore</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Pozovite doktora</div>
+                            <div class="phrase-lang phrase-slovenian">Pokličite zdravnika</div>
+                            <div class="phrase-lang phrase-english">Call a doctor</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Dov'è l'ospedale?</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Gdje je bolnica?</div>
+                            <div class="phrase-lang phrase-slovenian">Kje je bolnišnica?</div>
+                            <div class="phrase-lang phrase-english">Where is the hospital?</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phrase-category">
+                    <h3>💝 Cortesia Base</h3>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Ciao / Buongiorno</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Bok / Dobar dan</div>
+                            <div class="phrase-lang phrase-slovenian">Živjo / Dober dan</div>
+                            <div class="phrase-lang phrase-english">Hi / Good day</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Per favore</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Molim</div>
+                            <div class="phrase-lang phrase-slovenian">Prosim</div>
+                            <div class="phrase-lang phrase-english">Please</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Grazie</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Hvala</div>
+                            <div class="phrase-lang phrase-slovenian">Hvala</div>
+                            <div class="phrase-lang phrase-english">Thank you</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Mi scusi</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Oprostite</div>
+                            <div class="phrase-lang phrase-slovenian">Oprostite</div>
+                            <div class="phrase-lang phrase-english">Excuse me</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phrase-category">
+                    <h3>🛍️ Shopping & Direzioni</h3>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Quanto costa?</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Koliko košta?</div>
+                            <div class="phrase-lang phrase-slovenian">Koliko stane?</div>
+                            <div class="phrase-lang phrase-english">How much does it cost?</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Dov'è...?</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Gdje je...?</div>
+                            <div class="phrase-lang phrase-slovenian">Kje je...?</div>
+                            <div class="phrase-lang phrase-english">Where is...?</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Non parlo croato/sloveno</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Ne govorim hrvatski</div>
+                            <div class="phrase-lang phrase-slovenian">Ne govorim slovensko</div>
+                            <div class="phrase-lang phrase-english">I don't speak Croatian/Slovenian</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- INFO 2025 TAB -->
+        <div id="info" class="tab-content">
+            <h2>ℹ️ Informazioni Aggiornate 2025</h2>
+            <p>Aggiornamenti critici per il tuo viaggio</p>
+
+            <div class="alert">
+                <div class="alert-title">🚨 Aggiornamenti Importanti</div>
+                <div>Questi cambiamenti del 2025 potrebbero influenzare il tuo viaggio. Informazioni aggiornate a
+                    luglio 2025.</div>
+            </div>
+
+            <div class="phrase-category">
+                <h3>🏰 Zagabria - Cattedrale Chiusa</h3>
+                <div style="padding: 1rem; background: #fff3cd; border-radius: 8px; margin: 1rem 0;">
+                    <p><strong>Situazione:</strong> La Cattedrale di Zagabria rimane chiusa ai visitatori per
+                        restauri post-terremoto del 2020.</p>
+                    <p><strong>Aggiornamento 2025:</strong> Possibile riapertura parziale per la Messa di Natale
+                        2025, ma il restauro completo richiederà diversi anni.</p>
+                    <p><strong>Alternative:</strong> Vista esterna delle guglie gotiche + Chiesa di San Marco
+                        (aperta durante le messe) + Museo delle Relazioni Interrotte</p>
+                </div>
+            </div>
+
+            <div class="phrase-category">
+                <h3>🛂 Controlli Frontiera Slovenia-Croazia</h3>
+                <div style="padding: 1rem; background: #e3f2fd; border-radius: 8px; margin: 1rem 0;">
+                    <p><strong>Novità 2025:</strong> La Slovenia ha esteso i controlli interni alle frontiere con la
+                        Croazia fino a giugno 2025.</p>
+                    <p><strong>Cosa significa:</strong> Controlli passaporti anche se entrambi paesi UE. Documenti
+                        necessari: passaporto o carta d'identità UE.</p>
+                    <p><strong>Tempo extra:</strong> Prevedi 15-30 minuti aggiuntivi per attraversamenti di
+                        frontiera.</p>
+                    <p><strong>Punti autorizzati:</strong> 12 valichi stradali per cittadini UE, possibili ispezioni
+                        veicoli.</p>
+                </div>
+            </div>
+
+            <div class="phrase-category">
+                <h3>🚗 Vignetta Slovenia & Auto a Noleggio</h3>
+                <div style="padding: 1rem; background: #e8f5e8; border-radius: 8px; margin: 1rem 0;">
+                    <p><strong>Costi 2025:</strong></p>
+                    <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+                        <li>Vignetta settimanale: €16</li>
+                        <li>Vignetta mensile: €32</li>
+                        <li>Tunnel Karawanks: €8,80 (separato)</li>
+                    </ul>
+                    <p><strong>Acquisto:</strong> Solo online su evinjeta.dars.si (collegata alla targa)</p>
+                    <p><strong>Multa senza vignetta:</strong> €300-800</p>
+                    <p><strong>Cross Border Fee:</strong> Informare sempre il noleggio dell'attraversamento confini
+                    </p>
+                </div>
+            </div>
+
+            <div class="phrase-category">
+                <h3>💰 Valuta Unificata</h3>
+                <div style="padding: 1rem; background: #f8f9fa; border-radius: 8px; margin: 1rem 0;">
+                    <p><strong>Buone notizie!</strong> La Croazia ha adottato l'Euro nel gennaio 2023.</p>
+                    <p><strong>Vantaggi:</strong> Tutti e tre i paesi (Croazia, Slovenia, Italia) usano EUR - niente
+                        cambi!</p>
+                    <p><strong>Carte:</strong> Carte contactless accettate ovunque nelle città principali</p>
+                    <p><strong>Contanti:</strong> Alcuni mercati locali e caffè potrebbero preferire contanti</p>
+                </div>
+            </div>
+
+            <div class="phrase-category">
+                <h3>📱 App Utili per il Viaggio</h3>
+                <div style="padding: 1rem; background: #e8f5e8; border-radius: 8px; margin: 1rem 0;">
+                    <p><strong>Trasporti:</strong></p>
+                    <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+                        <li>ZET Mobile (Zagabria) - tram e autobus</li>
+                        <li>Urbana (Lubiana) - autobus urbani</li>
+                        <li>TPT (Trieste) - trasporto pubblico locale</li>
+                    </ul>
+                    <p><strong>Traduzione:</strong> Google Translate supporta fotocamera per menu ristoranti</p>
+                    <p><strong>Mappe offline:</strong> Maps.me o Google Maps (download offline)</p>
+                </div>
+            </div>
+
+            <div class="phrase-category">
+                <h3>🌤️ Meteo Agosto-Settembre</h3>
+                <div style="padding: 1rem; background: #fff3cd; border-radius: 8px; margin: 1rem 0;">
+                    <p><strong>Temperature medie:</strong></p>
+                    <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+                        <li>Zagabria: 25-28°C (possibili temporali pomeridiani)</li>
+                        <li>Lubiana: 23-26°C (fresco la sera)</li>
+                        <li>Trieste: 26-29°C (bora possibile)</li>
+                        <li>Istria: 27-30°C (ideale per mare)</li>
+                    </ul>
+                    <p><strong>Cosa portare:</strong> Giacca leggera per serate, scarpe comode per ciottoli</p>
+                </div>
+            </div>
+
+            <div class="phrase-category">
+                <h3>📞 Numeri di Emergenza</h3>
+                <div style="padding: 1rem; background: #ffebee; border-radius: 8px; margin: 1rem 0;">
+                    <p><strong>Numero unico UE:</strong> 112 (tutti i paesi)</p>
+                    <p><strong>Croazia:</strong></p>
+                    <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+                        <li>Polizia: 192</li>
+                        <li>Pompieri: 193</li>
+                        <li>Ambulanza: 194</li>
+                    </ul>
+                    <p><strong>Slovenia:</strong></p>
+                    <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+                        <li>Polizia: 113</li>
+                        <li>Ambulanza: 112</li>
+                    </ul>
+                    <p><strong>Italia:</strong> 112 (Carabinieri), 113 (Polizia), 115 (Pompieri), 118 (Ambulanza)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script type="module" src="assets/js/app.js"></script>
+</body>
+
+</html>

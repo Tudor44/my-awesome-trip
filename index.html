@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0; url=index_new.html">
+    <title>Il Mio Viaggio Estate 2025 - Redirecting...</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f5dc 0%, #ffffff 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .loading {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        h1 { color: #78A22F; margin-bottom: 1rem; }
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #78A22F;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 1rem auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading">
+        <h1>🇭🇷 🇸🇮 🇮🇹 Il Mio Viaggio Estate 2025</h1>
+        <div class="spinner"></div>
+        <p>Redirecting to the travel app...</p>
+        <p><a href="index_new.html">Click here if not redirected automatically</a></p>
+    </div>
+    
+    <script>
+        // Fallback redirect after 2 seconds
+        setTimeout(() => {
+            window.location.href = 'index_new.html';
+        }, 2000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+# GitHub Pages Jekyll configuration
+plugins:
+  - jekyll-relative-links
+
+# Exclude files from processing
+exclude:
+  - Dockerfile
+  - docker-compose.yml
+  - Makefile
+  - expose.sh
+  - "*.md"
+  - node_modules/
+  - .docker/
+
+# Include all other files
+include:
+  - assets/
+  - "*.html"
+
+# Set the default page
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: none
+
+# Relative links configuration
+relative_links:
+  enabled: true
+  collections: false

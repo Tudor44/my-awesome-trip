@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel App Test - Standalone</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🇭🇷 🇸🇮 🇮🇹 Il Mio Viaggio Estate 2025</h1>
+            <p>Testing Modular Version</p>
+        </div>
+        
+        <div class="nav-tabs">
+            <button class="nav-tab active" onclick="showTab('test')">🧪 Test</button>
+        </div>
+        
+        <div id="test" class="tab-content active">
+            <h2>✅ CSS Modules Working</h2>
+            <p>If you see styled content, the CSS extraction worked!</p>
+            
+            <div class="activity-item">
+                <div class="activity-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="activity-content">
+                    <div class="activity-title">Test Activity</div>
+                    <div class="activity-description">Click the checkbox to test functionality</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function showTab(tab) {
+            console.log('Tab function working:', tab);
+        }
+        console.log('Standalone test loaded');
+    </script>
+</body>
+</html>

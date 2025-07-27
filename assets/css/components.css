@@ -1,0 +1,300 @@
+/* Header styles */
+.header {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-blue) 100%);
+    color: var(--white);
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-xl);
+    margin-bottom: var(--spacing-xl);
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+}
+
+.header h1 {
+    font-size: var(--font-size-xxl);
+    margin-bottom: var(--spacing-sm);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header p {
+    font-size: var(--font-size-lg);
+    opacity: 0.95;
+}
+
+/* Navigation tabs */
+.nav-tabs {
+    display: flex;
+    background: var(--white);
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: var(--spacing-xl);
+    box-shadow: var(--shadow-md);
+    overflow-x: auto;
+}
+
+.nav-tab {
+    flex: 1;
+    padding: var(--spacing-md);
+    text-align: center;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    border: none;
+    background: transparent;
+    font-size: var(--font-size-md);
+    font-weight: 600;
+    min-width: 150px;
+}
+
+.nav-tab:hover {
+    background: #f0f8f0;
+    transform: translateY(-2px);
+}
+
+.nav-tab.active {
+    background: var(--primary-green);
+    color: var(--white);
+    box-shadow: 0 4px 15px rgba(120, 162, 47, 0.3);
+}
+
+/* Tab content */
+.tab-content {
+    display: none;
+    background: var(--white);
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-xl);
+    box-shadow: var(--shadow-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.tab-content.active {
+    display: block;
+    animation: fadeIn var(--transition-slow) ease-in;
+}
+
+/* City sections */
+.city-section {
+    margin-bottom: var(--spacing-xxl);
+    padding: var(--spacing-xl);
+    background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
+    border-radius: var(--border-radius-lg);
+    border-left: 5px solid var(--zagreb-red);
+}
+
+.city-section.ljubljana {
+    border-left-color: var(--primary-green);
+}
+
+.city-section.trieste {
+    border-left-color: var(--trieste-gold);
+}
+
+.city-section.istria {
+    border-left-color: var(--istria-blue);
+}
+
+.city-title {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-md);
+    color: var(--zagreb-red);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.city-title.ljubljana {
+    color: var(--primary-green);
+}
+
+.city-title.trieste {
+    color: var(--trieste-gold);
+}
+
+.city-title.istria {
+    color: var(--istria-blue);
+}
+
+/* Activity list */
+.activity-list {
+    list-style: none;
+    margin: var(--spacing-md) 0;
+}
+
+.activity-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+    background: var(--white);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+}
+
+.activity-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.activity-checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: var(--border-radius-sm);
+    border: 2px solid var(--primary-green);
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-top: 2px;
+    position: relative;
+    transition: all var(--transition-base);
+}
+
+.activity-checkbox.checked {
+    background: var(--primary-green);
+}
+
+.activity-checkbox.checked::after {
+    content: '✓';
+    position: absolute;
+    top: -2px;
+    left: 3px;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.activity-content {
+    flex: 1;
+}
+
+.activity-title {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: var(--dark-gray);
+}
+
+.activity-description {
+    color: var(--medium-gray);
+    font-size: var(--font-size-base);
+    line-height: 1.4;
+}
+
+.activity-time {
+    background: #e3f2fd;
+    color: var(--info);
+    padding: 0.2rem var(--spacing-sm);
+    border-radius: 12px;
+    font-size: var(--font-size-sm);
+    display: inline-block;
+    margin-top: var(--spacing-sm);
+}
+
+/* Progress bar */
+.progress-bar {
+    background: var(--border-gray);
+    border-radius: 10px;
+    padding: 3px;
+    margin: var(--spacing-xl) 0;
+}
+
+.progress-fill {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-blue) 100%);
+    height: 10px;
+    border-radius: 8px;
+    transition: width var(--transition-slow);
+    position: relative;
+}
+
+.progress-text {
+    text-align: center;
+    margin-top: var(--spacing-sm);
+    font-weight: 600;
+    color: var(--medium-gray);
+}
+
+/* Photo gallery */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+}
+
+.photo-card {
+    background: var(--white);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: all var(--transition-base);
+}
+
+.photo-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.photo-placeholder {
+    height: 200px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 3rem;
+    position: relative;
+}
+
+.photo-placeholder.zagreb {
+    background: linear-gradient(135deg, var(--zagreb-red) 0%, var(--zagreb-blue) 100%);
+}
+
+.photo-placeholder.ljubljana {
+    background: linear-gradient(135deg, var(--ljubljana-green) 0%, var(--ljubljana-blue) 100%);
+}
+
+.photo-placeholder.trieste {
+    background: linear-gradient(135deg, var(--trieste-gold) 0%, var(--trieste-brown) 100%);
+}
+
+.photo-placeholder.istria {
+    background: linear-gradient(135deg, var(--istria-blue) 0%, var(--istria-beige) 100%);
+}
+
+.photo-info {
+    padding: var(--spacing-lg);
+}
+
+.photo-title {
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    color: var(--dark-gray);
+}
+
+.photo-description {
+    color: var(--medium-gray);
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-md);
+}
+
+.photo-tips {
+    background: var(--light-gray);
+    padding: 0.8rem;
+    border-radius: 6px;
+    font-size: var(--font-size-sm);
+    color: #555;
+    border-left: 3px solid var(--primary-green);
+}
+
+/* Alert component */
+.alert {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    color: #856404;
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    margin: var(--spacing-md) 0;
+    border-left: 4px solid var(--warning);
+}
+
+.alert-title {
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+}
