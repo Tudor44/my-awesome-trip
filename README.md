@@ -54,20 +54,6 @@ make logs
 make down
 ```
 
-### Manual Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/app_di_viaggio.git
-cd app_di_viaggio
-
-# Start a local server (ES6 modules require HTTP server)
-python3 -m http.server 8000
-
-# Open in browser
-open http://localhost:8000/index_new.html
-```
-
 ## 🎯 Roadmap
 
 - [ ] Budget tracking with expense management
