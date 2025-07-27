@@ -1,56 +1,469 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=index_new.html">
-    <title>Il Mio Viaggio Estate 2025 - Redirecting...</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #f5f5dc 0%, #ffffff 100%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-        }
-        .loading {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-        }
-        h1 { color: #78A22F; margin-bottom: 1rem; }
-        .spinner {
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #78A22F;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin: 1rem auto;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
-</head>
-<body>
-    <div class="loading">
-        <h1>🇭🇷 🇸🇮 🇮🇹 Il Mio Viaggio Estate 2025</h1>
-        <div class="spinner"></div>
-        <p>Redirecting to the travel app...</p>
-        <p><a href="index_new.html">Click here if not redirected automatically</a></p>
-    </div>
+    <title>Il Mio Viaggio Estate 2025</title>
     
-    <script>
-        // Fallback redirect after 2 seconds
-        setTimeout(() => {
-            window.location.href = 'index_new.html';
-        }, 2000);
-    </script>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🇭🇷 🇸🇮 🇮🇹 Il Mio Viaggio Estate 2025</h1>
+            <p>Zagabria • Lubiana • Trieste • Istria | 28 Agosto - 4 Settembre</p>
+        </div>
+
+        <div class="nav-tabs">
+            <button class="nav-tab active" data-tab="itinerary">📋 Itinerario</button>
+            <button class="nav-tab" data-tab="photos">📸 Galleria Foto</button>
+            <button class="nav-tab" data-tab="phrases">🗣️ Frasi Utili</button>
+            <button class="nav-tab" data-tab="info">ℹ️ Info 2025</button>
+        </div>
+
+        <div id="progress-section">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressBar" style="width: 0%"></div>
+            </div>
+            <div class="progress-text" id="progressText">0% completato - Il viaggio inizia tra poco!</div>
+        </div>
+
+        <!-- ITINERARIO TAB -->
+        <div id="itinerary" class="tab-content active">
+            <!-- Contenuto generato dinamicamente dall'ItineraryRenderer -->
+        </div>
+
+        <!-- GALLERIA FOTO TAB -->
+        <div id="photos" class="tab-content">
+            <h2>📸 Galleria di Ispirazione Fotografica</h2>
+            <p>I migliori spot Instagram-worthy del tuo viaggio con consigli per timing e composizione</p>
+
+            <div class="photo-gallery">
+                <div class="photo-card">
+                    <div class="photo-placeholder zagreb">🏰</div>
+                    <div class="photo-info">
+                        <div class="photo-title">Chiesa di San Marco - Zagabria</div>
+                        <div class="photo-description">Il tetto più instagrammabile d'Europa con gli stemmi colorati
+                            della Croazia</div>
+                        <div class="photo-tips">💡 Migliore illuminazione: mattina 7-9 AM o golden hour 17-19</div>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <div class="photo-placeholder zagreb">🎨</div>
+                    <div class="photo-info">
+                        <div class="photo-title">Gradec Whale Mural - Zagabria</div>
+                        <div class="photo-description">Street art di Etienne, tra i top 10 murales mondiali</div>
+                        <div class="photo-tips">💡 Posizione: Via Opatička. Meglio con luce diffusa per evitare riflessi
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <div class="photo-placeholder ljubljana">🐉</div>
+                    <div class="photo-info">
+                        <div class="photo-title">Ponte dei Draghi - Lubiana</div>
+                        <div class="photo-description">Quattro draghi in bronzo, simbolo della città</div>
+                        <div class="photo-tips">💡 Inquadratura dal lato fiume per includere il castello sullo sfondo
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <div class="photo-placeholder ljubljana">🌉</div>
+                    <div class="photo-info">
+                        <div class="photo-title">Triplo Ponte - Lubiana</div>
+                        <div class="photo-description">Capolavoro di Plečnik: serve obiettivo grandangolare per tutti e
+                            tre i ponti</div>
+                        <div class="photo-tips">💡 Blue hour perfetta per luci riflesse nel fiume Ljubljanica</div>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <div class="photo-placeholder ljubljana">🏰</div>
+                    <div class="photo-info">
+                        <div class="photo-title">Nebotičnik Skyscraper - Lubiana</div>
+                        <div class="photo-description">Terrazza panoramica a 360° sulla città, staff friendly per
+                            fotografi</div>
+                        <div class="photo-tips">💡 Sunrise, sunset e blue hour tutti spettacolari. Treppiede benvenuto!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <div class="photo-placeholder trieste">⚓</div>
+                    <div class="photo-info">
+                        <div class="photo-title">Piazza Unità d'Italia - Trieste</div>
+                        <div class="photo-description">La più grande piazza d'Europa sul mare</div>
+                        <div class="photo-tips">💡 Fotografa dal Molo Audace (200m) per la prospettiva completa</div>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <div class="photo-placeholder trieste">🏰</div>
+                    <div class="photo-info">
+                        <div class="photo-title">Castello di Miramare - Trieste</div>
+                        <div class="photo-description">Castello fiabesco su scogliere adriatiche</div>
+                        <div class="photo-tips">💡 Multiple viewpoints disponibili. Sunset dal parco botanico è magico
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <div class="photo-placeholder istria">🌅</div>
+                    <div class="photo-info">
+                        <div class="photo-title">Rovigno all'alba - Istria</div>
+                        <div class="photo-description">Case colorate veneziane riflesse nel porto</div>
+                        <div class="photo-tips">💡 Alba dal porto per riflessi dorati o blue hour per illuminazione
+                            urbana</div>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <div class="photo-placeholder istria">🏛️</div>
+                    <div class="photo-info">
+                        <div class="photo-title">Anfiteatro di Pola - Istria</div>
+                        <div class="photo-description">Uno dei 6 anfiteatri romani più grandi al mondo</div>
+                        <div class="photo-tips">💡 Dettagli architettonici al mattino, silhouette drammatiche al
+                            tramonto</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FRASI UTILI TAB -->
+        <div id="phrases" class="tab-content">
+            <h2>🗣️ Traduttore - Frasi Essenziali</h2>
+            <p>Le frasi più utili in croato, sloveno e inglese per il tuo viaggio</p>
+
+            <div class="phrase-categories">
+                <div class="phrase-category">
+                    <h3>🏨 Hotel & Alloggio</h3>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Ho una prenotazione</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Imam rezervaciju</div>
+                            <div class="phrase-lang phrase-slovenian">Imam rezervacijo</div>
+                            <div class="phrase-lang phrase-english">I have a reservation</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Avete camere disponibili?</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Imate li slobodne sobe?</div>
+                            <div class="phrase-lang phrase-slovenian">Imate proste sobe?</div>
+                            <div class="phrase-lang phrase-english">Do you have available rooms?</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">A che ora è il check-out?</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Kad je odjava?</div>
+                            <div class="phrase-lang phrase-slovenian">Kdaj je odjava?</div>
+                            <div class="phrase-lang phrase-english">What time is check-out?</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phrase-category">
+                    <h3>🍽️ Ristorante & Cibo</h3>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Un tavolo per due, per favore</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Stol za dvoje, molim</div>
+                            <div class="phrase-lang phrase-slovenian">Mizo za dva, prosim</div>
+                            <div class="phrase-lang phrase-english">A table for two, please</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Sono vegetariano/a</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Vegetarijanac/ka sam</div>
+                            <div class="phrase-lang phrase-slovenian">Sem vegetarijanec/ka</div>
+                            <div class="phrase-lang phrase-english">I'm vegetarian</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Il conto, per favore</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Račun, molim</div>
+                            <div class="phrase-lang phrase-slovenian">Račun, prosim</div>
+                            <div class="phrase-lang phrase-english">The bill, please</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">È delizioso!</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Jako je ukusno!</div>
+                            <div class="phrase-lang phrase-slovenian">Zelo okusno!</div>
+                            <div class="phrase-lang phrase-english">It's delicious!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phrase-category">
+                    <h3>🚌 Trasporti</h3>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Dove si trova la stazione?</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Gdje je kolodvor?</div>
+                            <div class="phrase-lang phrase-slovenian">Kje je postaja?</div>
+                            <div class="phrase-lang phrase-english">Where is the station?</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Un biglietto per...</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Jednu kartu za...</div>
+                            <div class="phrase-lang phrase-slovenian">Eno vozovnico za...</div>
+                            <div class="phrase-lang phrase-english">One ticket to...</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Quando parte il prossimo autobus?</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Kad polazi sljedeći autobus?</div>
+                            <div class="phrase-lang phrase-slovenian">Kdaj vozi naslednji avtobus?</div>
+                            <div class="phrase-lang phrase-english">When does the next bus leave?</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phrase-category">
+                    <h3>🆘 Emergenze</h3>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Aiuto!</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Upomoć!</div>
+                            <div class="phrase-lang phrase-slovenian">Na pomoč!</div>
+                            <div class="phrase-lang phrase-english">Help!</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Chiamate un dottore</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Pozovite doktora</div>
+                            <div class="phrase-lang phrase-slovenian">Pokličite zdravnika</div>
+                            <div class="phrase-lang phrase-english">Call a doctor</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Dov'è l'ospedale?</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Gdje je bolnica?</div>
+                            <div class="phrase-lang phrase-slovenian">Kje je bolnišnica?</div>
+                            <div class="phrase-lang phrase-english">Where is the hospital?</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phrase-category">
+                    <h3>💝 Cortesia Base</h3>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Ciao / Buongiorno</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Bok / Dobar dan</div>
+                            <div class="phrase-lang phrase-slovenian">Živjo / Dober dan</div>
+                            <div class="phrase-lang phrase-english">Hi / Good day</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Per favore</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Molim</div>
+                            <div class="phrase-lang phrase-slovenian">Prosim</div>
+                            <div class="phrase-lang phrase-english">Please</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Grazie</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Hvala</div>
+                            <div class="phrase-lang phrase-slovenian">Hvala</div>
+                            <div class="phrase-lang phrase-english">Thank you</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Mi scusi</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Oprostite</div>
+                            <div class="phrase-lang phrase-slovenian">Oprostite</div>
+                            <div class="phrase-lang phrase-english">Excuse me</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phrase-category">
+                    <h3>🛍️ Shopping & Direzioni</h3>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Quanto costa?</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Koliko košta?</div>
+                            <div class="phrase-lang phrase-slovenian">Koliko stane?</div>
+                            <div class="phrase-lang phrase-english">How much does it cost?</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Dov'è...?</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Gdje je...?</div>
+                            <div class="phrase-lang phrase-slovenian">Kje je...?</div>
+                            <div class="phrase-lang phrase-english">Where is...?</div>
+                        </div>
+                    </div>
+
+                    <div class="phrase-item">
+                        <div class="phrase-italian">Non parlo croato/sloveno</div>
+                        <div class="phrase-translations">
+                            <div class="phrase-lang phrase-croatian">Ne govorim hrvatski</div>
+                            <div class="phrase-lang phrase-slovenian">Ne govorim slovensko</div>
+                            <div class="phrase-lang phrase-english">I don't speak Croatian/Slovenian</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- INFO 2025 TAB -->
+        <div id="info" class="tab-content">
+            <h2>ℹ️ Informazioni Aggiornate 2025</h2>
+            <p>Aggiornamenti critici per il tuo viaggio</p>
+
+            <div class="alert">
+                <div class="alert-title">🚨 Aggiornamenti Importanti</div>
+                <div>Questi cambiamenti del 2025 potrebbero influenzare il tuo viaggio. Informazioni aggiornate a
+                    luglio 2025.</div>
+            </div>
+
+            <div class="phrase-category">
+                <h3>🏰 Zagabria - Cattedrale Chiusa</h3>
+                <div style="padding: 1rem; background: #fff3cd; border-radius: 8px; margin: 1rem 0;">
+                    <p><strong>Situazione:</strong> La Cattedrale di Zagabria rimane chiusa ai visitatori per
+                        restauri post-terremoto del 2020.</p>
+                    <p><strong>Aggiornamento 2025:</strong> Possibile riapertura parziale per la Messa di Natale
+                        2025, ma il restauro completo richiederà diversi anni.</p>
+                    <p><strong>Alternative:</strong> Vista esterna delle guglie gotiche + Chiesa di San Marco
+                        (aperta durante le messe) + Museo delle Relazioni Interrotte</p>
+                </div>
+            </div>
+
+            <div class="phrase-category">
+                <h3>🛂 Controlli Frontiera Slovenia-Croazia</h3>
+                <div style="padding: 1rem; background: #e3f2fd; border-radius: 8px; margin: 1rem 0;">
+                    <p><strong>Novità 2025:</strong> La Slovenia ha esteso i controlli interni alle frontiere con la
+                        Croazia fino a giugno 2025.</p>
+                    <p><strong>Cosa significa:</strong> Controlli passaporti anche se entrambi paesi UE. Documenti
+                        necessari: passaporto o carta d'identità UE.</p>
+                    <p><strong>Tempo extra:</strong> Prevedi 15-30 minuti aggiuntivi per attraversamenti di
+                        frontiera.</p>
+                    <p><strong>Punti autorizzati:</strong> 12 valichi stradali per cittadini UE, possibili ispezioni
+                        veicoli.</p>
+                </div>
+            </div>
+
+            <div class="phrase-category">
+                <h3>🚗 Vignetta Slovenia & Auto a Noleggio</h3>
+                <div style="padding: 1rem; background: #e8f5e8; border-radius: 8px; margin: 1rem 0;">
+                    <p><strong>Costi 2025:</strong></p>
+                    <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+                        <li>Vignetta settimanale: €16</li>
+                        <li>Vignetta mensile: €32</li>
+                        <li>Tunnel Karawanks: €8,80 (separato)</li>
+                    </ul>
+                    <p><strong>Acquisto:</strong> Solo online su evinjeta.dars.si (collegata alla targa)</p>
+                    <p><strong>Multa senza vignetta:</strong> €300-800</p>
+                    <p><strong>Cross Border Fee:</strong> Informare sempre il noleggio dell'attraversamento confini
+                    </p>
+                </div>
+            </div>
+
+            <div class="phrase-category">
+                <h3>💰 Valuta Unificata</h3>
+                <div style="padding: 1rem; background: #f8f9fa; border-radius: 8px; margin: 1rem 0;">
+                    <p><strong>Buone notizie!</strong> La Croazia ha adottato l'Euro nel gennaio 2023.</p>
+                    <p><strong>Vantaggi:</strong> Tutti e tre i paesi (Croazia, Slovenia, Italia) usano EUR - niente
+                        cambi!</p>
+                    <p><strong>Carte:</strong> Carte contactless accettate ovunque nelle città principali</p>
+                    <p><strong>Contanti:</strong> Alcuni mercati locali e caffè potrebbero preferire contanti</p>
+                </div>
+            </div>
+
+            <div class="phrase-category">
+                <h3>📱 App Utili per il Viaggio</h3>
+                <div style="padding: 1rem; background: #e8f5e8; border-radius: 8px; margin: 1rem 0;">
+                    <p><strong>Trasporti:</strong></p>
+                    <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+                        <li>ZET Mobile (Zagabria) - tram e autobus</li>
+                        <li>Urbana (Lubiana) - autobus urbani</li>
+                        <li>TPT (Trieste) - trasporto pubblico locale</li>
+                    </ul>
+                    <p><strong>Traduzione:</strong> Google Translate supporta fotocamera per menu ristoranti</p>
+                    <p><strong>Mappe offline:</strong> Maps.me o Google Maps (download offline)</p>
+                </div>
+            </div>
+
+            <div class="phrase-category">
+                <h3>🌤️ Meteo Agosto-Settembre</h3>
+                <div style="padding: 1rem; background: #fff3cd; border-radius: 8px; margin: 1rem 0;">
+                    <p><strong>Temperature medie:</strong></p>
+                    <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+                        <li>Zagabria: 25-28°C (possibili temporali pomeridiani)</li>
+                        <li>Lubiana: 23-26°C (fresco la sera)</li>
+                        <li>Trieste: 26-29°C (bora possibile)</li>
+                        <li>Istria: 27-30°C (ideale per mare)</li>
+                    </ul>
+                    <p><strong>Cosa portare:</strong> Giacca leggera per serate, scarpe comode per ciottoli</p>
+                </div>
+            </div>
+
+            <div class="phrase-category">
+                <h3>📞 Numeri di Emergenza</h3>
+                <div style="padding: 1rem; background: #ffebee; border-radius: 8px; margin: 1rem 0;">
+                    <p><strong>Numero unico UE:</strong> 112 (tutti i paesi)</p>
+                    <p><strong>Croazia:</strong></p>
+                    <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+                        <li>Polizia: 192</li>
+                        <li>Pompieri: 193</li>
+                        <li>Ambulanza: 194</li>
+                    </ul>
+                    <p><strong>Slovenia:</strong></p>
+                    <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+                        <li>Polizia: 113</li>
+                        <li>Ambulanza: 112</li>
+                    </ul>
+                    <p><strong>Italia:</strong> 112 (Carabinieri), 113 (Polizia), 115 (Pompieri), 118 (Ambulanza)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script type="module" src="assets/js/app.js"></script>
 </body>
+
 </html>

@@ -5,6 +5,7 @@
 
 import TabManager from './modules/tabs.js';
 import ActivityManager from './modules/activities.js';
+import ItineraryRenderer from './modules/itineraryRenderer.js';
 import Storage from './modules/storage.js';
 
 class TravelApp {
@@ -53,9 +54,14 @@ class TravelApp {
         this.modules.tabs = TabManager;
         TabManager.init();
 
+        // Initialize itinerary renderer (must be before activity manager)
+        this.modules.itineraryRenderer = ItineraryRenderer;
+        ItineraryRenderer.init();
+
         // Initialize activity management
         this.modules.activities = ActivityManager;
         ActivityManager.init();
+
     }
 
     /**
@@ -94,6 +100,12 @@ class TravelApp {
 
         document.addEventListener('activityToggled', (e) => {
             console.log('Activity toggled:', e.detail);
+        });
+
+        document.addEventListener('itineraryRendered', () => {
+            console.log('Itinerary rendered, re-binding activities');
+            // Re-initialize activity manager to bind new elements
+            ActivityManager.init();
         });
     }
 

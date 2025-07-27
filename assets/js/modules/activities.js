@@ -29,7 +29,7 @@ const ActivityManager = {
             const activityId = checkbox.getAttribute('data-activity-id') || `activity_${index}`;
             checkbox.setAttribute('data-activity-id', activityId);
             
-            checkbox.addEventListener('click', () => {
+            checkbox.addEventListener('change', () => {
                 this.toggleActivity(checkbox, activityId);
             });
         });
@@ -41,9 +41,7 @@ const ActivityManager = {
      * @param {string} activityId - Unique activity identifier
      */
     toggleActivity(checkbox, activityId) {
-        checkbox.classList.toggle('checked');
-        
-        if (checkbox.classList.contains('checked')) {
+        if (checkbox.checked) {
             this.completedActivities.add(activityId);
         } else {
             this.completedActivities.delete(activityId);
@@ -56,7 +54,7 @@ const ActivityManager = {
         document.dispatchEvent(new CustomEvent('activityToggled', {
             detail: { 
                 activityId, 
-                completed: checkbox.classList.contains('checked'),
+                completed: checkbox.checked,
                 totalCompleted: this.completedActivities.size,
                 totalActivities: this.totalActivities
             }
@@ -128,7 +126,7 @@ const ActivityManager = {
         document.querySelectorAll('.activity-checkbox').forEach((checkbox, index) => {
             const activityId = checkbox.getAttribute('data-activity-id') || `activity_${index}`;
             if (this.completedActivities.has(activityId)) {
-                checkbox.classList.add('checked');
+                checkbox.checked = true;
             }
         });
     },
@@ -151,7 +149,7 @@ const ActivityManager = {
     resetAll() {
         this.completedActivities.clear();
         document.querySelectorAll('.activity-checkbox').forEach(checkbox => {
-            checkbox.classList.remove('checked');
+            checkbox.checked = false;
         });
         this.updateProgress();
         this.saveCompletedActivities();
@@ -163,7 +161,7 @@ const ActivityManager = {
     completeAll() {
         document.querySelectorAll('.activity-checkbox').forEach((checkbox, index) => {
             const activityId = checkbox.getAttribute('data-activity-id') || `activity_${index}`;
-            checkbox.classList.add('checked');
+            checkbox.checked = true;
             this.completedActivities.add(activityId);
         });
         this.updateProgress();
