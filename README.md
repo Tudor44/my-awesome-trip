@@ -6,14 +6,13 @@ A modern, interactive travel planner (updated to Summer 2025 through Croatia, Sl
 
 - **Interactive Itinerary**: Checklist-style activity tracking with progress bar
 - **Photo Gallery**: Instagram-worthy spots with photography tips  
-- **Multi-language Phrases**: Essential phrases in Croatian, Slovenian, and English
+- **Multi-language Phrases**: Essential phrases in Croatian, Slovenian, and English (updated to 2025 trip)
 - **2025 Travel Info**: Updated information about border controls, costs, and regulations
 - **Responsive Design**: Works perfectly on mobile and desktop
 - **Data Persistence**: Your progress is automatically saved
 
 ## 🚀 Live Demo
-
-Visit the live app: [https://yourusername.github.io/app_di_viaggio/](https://yourusername.github.io/app_di_viaggio/)
+Visit the live app: [https://tudor44.github.io/my-awesome-trip](https://tudor44.github.io/my-awesome-trip)
 
 ## 🛠️ Technical Features
 
